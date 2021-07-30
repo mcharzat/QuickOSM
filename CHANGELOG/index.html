@@ -16,7 +16,7 @@
         <link rel="canonical" href="https://docs.3liz.org/QuickOSM/CHANGELOG/">
       
       <link rel="icon" href="../media/icon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.5">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.1">
     
     
       
@@ -24,10 +24,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.bde7dde4.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.1118c9be.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ba0d045b.min.css">
         
           
           
@@ -45,6 +45,8 @@
     
     
       
+
+
     
     
   </head>
@@ -112,14 +114,18 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
       </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -166,7 +172,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="../../" class="md-tabs__link">
+    <a href="../" class="md-tabs__link">
       docs.3liz.org
     </a>
   </li>
@@ -299,7 +305,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         docs.3liz.org
       </a>
     </li>
@@ -461,6 +467,34 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#unreleased" class="md-nav__link">
+    Unreleased
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#200-2021-07-30" class="md-nav__link">
+    2.0.0 - 2021-07-30
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1171-2021-06-23" class="md-nav__link">
+    1.17.1 - 2021-06-23
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1170-2021-06-09" class="md-nav__link">
+    1.17.0 - 2021-06-09
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#1160-2021-03-26" class="md-nav__link">
     1.16.0 - 2021-03-26
   </a>
@@ -520,6 +554,43 @@
                 
                 
                 <h1 id="changelog">Changelog<a class="headerlink" href="#changelog" title="Permanent link">#</a></h1>
+<h2 id="unreleased">Unreleased<a class="headerlink" href="#unreleased" title="Permanent link">#</a></h2>
+<h2 id="200-2021-07-30">2.0.0 - 2021-07-30<a class="headerlink" href="#200-2021-07-30" title="Permanent link">#</a></h2>
+<ul>
+<li>Add presets for the keys/values</li>
+<li>Add multi-keys query from quick query panel</li>
+<li>Add history of queries</li>
+<li>Add option to get the metadata of osm</li>
+<li>Add default map presets  </li>
+<li>Add save query in a personal preset (new or existing one)</li>
+<li>Add an action to reload the query</li>
+<li>Add processing algorithms</li>
+<li>Add several output format</li>
+<li>Add the possibility to load only a subset of a local file</li>
+<li>Boost of performance using HStore processing algorithm to parse the downloaded osm file</li>
+<li>Improve UI</li>
+<li>Update of the documentation</li>
+</ul>
+<h2 id="1171-2021-06-23">1.17.1 - 2021-06-23<a class="headerlink" href="#1171-2021-06-23" title="Permanent link">#</a></h2>
+<ul>
+<li>Add a reminder of the copyrights</li>
+<li>Fix loading of translations files</li>
+<li>Fix an error triggered when there was no layer in the project that prevented the generation functionality</li>
+<li>Fix an error when using QuickOSM in a Processing model</li>
+</ul>
+<h2 id="1170-2021-06-09">1.17.0 - 2021-06-09<a class="headerlink" href="#1170-2021-06-09" title="Permanent link">#</a></h2>
+<ul>
+<li>Add OpenHistoricalMap overpass server, linked to <a href="https://www.openhistoricalmap.org">https://www.openhistoricalmap.org</a></li>
+<li>Add an option to use the extent of selected features</li>
+<li>Add Overpass Query Language (OQL) generator by default instead of legacy XML</li>
+<li>Add the possibility to choose the Nominatim server, by default the one from qgis.org</li>
+<li>Add one check from the Overpass API if too many requests from the user</li>
+<li>Fix the Mapillary action in the attribute table</li>
+<li>Fix some user experience issue about the place name</li>
+<li>Fix user experience about the named area drop-down menu</li>
+<li>Fix 'Around' query type to fetch any OSM object instead of only OSM nodes.  </li>
+<li>In the source code, add some Python annotations and more tests</li>
+</ul>
 <h2 id="1160-2021-03-26">1.16.0 - 2021-03-26<a class="headerlink" href="#1160-2021-03-26" title="Permanent link">#</a></h2>
 <ul>
 <li>Changelog from 1.15.0 which has been unapproved</li>
@@ -558,6 +629,20 @@
 <li>Show human friendly label in the QuickQuery</li>
 </ul>
                 
+                  
+                    
+
+<hr>
+<div class="md-source-date">
+  <small>
+    
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 30, 2021</span>
+      
+    
+  </small>
+</div>
+                  
+                
               
               
                 
@@ -567,6 +652,11 @@
             </article>
           </div>
         </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
         
       </main>
       
@@ -626,6 +716,15 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M349.9 236.3h-66.1v-59.4h66.1v59.4zm0-204.3h-66.1v60.7h66.1V32zm78.2 144.8H362v59.4h66.1v-59.4zm-156.3-72.1h-66.1v60.1h66.1v-60.1zm78.1 0h-66.1v60.1h66.1v-60.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1l-13.3-8.9zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm-78.1-72.1h-66.1v60.1h66.1v-60.1z"/></svg>
       </a>
     
+      
+      
+        
+        
+      
+      <a href="https://www.youtube.com/channel/UCYYW2CTWR_84kB6pt2zCWbQ" target="_blank" rel="noopener" title="www.youtube.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+      </a>
+    
   </div>
 
     </div>
@@ -636,10 +735,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.d351de03.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.53c85856.min.js", "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.a1609d9a.min.js"></script>
+      <script src="../assets/javascripts/bundle.716f8af4.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
       
