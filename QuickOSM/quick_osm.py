@@ -1,7 +1,10 @@
 """QuickOSM main entry point for setting up the UI, Processing."""
 
 import logging
+import os
 import urllib.request
+
+from os.path import join
 
 from qgis.core import (
     Qgis,
@@ -9,6 +12,7 @@ from qgis.core import (
     QgsCoordinateReferenceSystem,
     QgsCoordinateTransform,
     QgsProject,
+    QgsZipUtils,
 )
 from qgis.PyQt.QtCore import QCoreApplication, QTranslator, QUrl
 from qgis.PyQt.QtGui import QDesktopServices, QIcon
@@ -65,6 +69,17 @@ class QuickOSMPlugin:
         else:
             # LOGGER.info('Translation not found: {}'.format(locale))
             pass
+
+        preset_translation_path = join(resources_path(), 'i18n')
+        if not os.path.isdir(preset_translation_path):
+            if os.path.isfile(preset_translation_path + '.zip'):
+                result = QgsZipUtils.unzip(preset_translation_path + '.zip', resources_path())
+                if not result[0]:
+                    os.mkdir(preset_translation_path)
+                else:
+                    LOGGER.info('Preset translations have been loaded and unzipped.')
+            else:
+                os.mkdir(preset_translation_path)
 
         self.provider = None
 
